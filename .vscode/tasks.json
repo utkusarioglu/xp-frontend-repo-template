@@ -1,0 +1,41 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Start mock server",
+      "detail": "Start mock Https server",
+      "type": "shell",
+      "command": "NODE_EXTRA_CA_CERTS=.certs.local/mock-server/ca.crt scripts/start-mock-server.js",
+      "icon": {
+        "color": "terminal.ansiBlue",
+        "id": "cloud"
+      }
+    },
+    {
+      "label": "dev:no-telemetry",
+      "detail": "Run dev instances for all apps without telemetry",
+      "type": "npm",
+      "script": "dev:no-telemetry",
+      "icon": {
+        "color": "terminal.ansiGreen",
+        "id": "play"
+      },
+      "promptOnClose": true,
+      "runOptions": {
+        "instanceLimit": 1,
+        "reevaluateOnRerun": true
+      },
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "dedicated",
+        "showReuseMessage": false,
+        "clear": false
+      },
+      "problemMatcher": []
+    }
+  ]
+}

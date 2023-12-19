@@ -1,0 +1,35 @@
+version: "3.9"
+services:
+  nextjs-grpc-frontend:
+    environment:
+      GH_TOKEN: ${GH_TOKEN}
+    volumes:
+      - type: volume
+        source: vscode-extensions
+        target: /home/rn/.vscode-server/extensions
+      - type: volume
+        source: vscode-extensions-insiders
+        target: /home/rn/.vscode-server-insiders/extensions
+
+      - type: volume
+        source: ccache
+        target: /ccache
+      - type: volume
+        source: gradle
+        target: /home/rn/.gradle
+      - type: volume
+        source: android
+        target: /opt/android
+    command: /bin/sh -c "while sleep 1000; do :; done"
+
+volumes:
+  vscode-extensions:
+    name: nextjs-grpc-frontend-vscode-extensions
+  vscode-extensions-insiders:
+    name: nextjs-grpc-frontend-vscode-extensions-insiders
+  ccache:
+    name: nextjs-grpc-frontend-ccache
+  gradle:
+    name: nextjs-grpc-frontend-gradle
+  android:
+    name: nextjs-grpc-frontend-android

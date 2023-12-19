@@ -1,0 +1,27 @@
+{
+  "name": "frontend.nextjs-grpc.projects.utkusarioglu.com",
+  "dockerComposeFile": [
+    "../.docker/docker-compose.dev.yml",
+    "docker-compose.yml"
+  ],
+  "service": "nextjs-grpc-frontend",
+  "workspaceFolder": "/utkusarioglu-com/projects/nextjs-grpc/frontend",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "msjsdiag.vscode-react-native",
+        "vscjava.vscode-java-pack",
+        "esbenp.vscode-prettier",
+        "esbenp.prettier-vscode",
+        "ms-azuretools.vscode-docker"
+      ],
+      "settings": {
+        "workbench.colorCustomizations": {
+          "activityBar.background": "#006644",
+          "activityBar.foreground": "#000"
+        }
+      }
+    }
+  },
+  "postCreateCommand": "scripts/post-create-command.sh"
+}
