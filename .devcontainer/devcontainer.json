@@ -1,11 +1,11 @@
 {
-  "name": "frontend.nextjs-grpc.projects.utkusarioglu.com",
+  "name": "xp-frontend-repo-template.templates.utkusarioglu.com",
   "dockerComposeFile": [
     "../.docker/docker-compose.dev.yml",
     "docker-compose.yml"
   ],
-  "service": "nextjs-grpc-frontend",
-  "workspaceFolder": "/utkusarioglu-com/projects/nextjs-grpc/frontend",
+  "service": "xp-frontend-repo-template",
+  "workspaceFolder": "/utkusarioglu-com/templates/xp-frontend-repo-template",
   "customizations": {
     "vscode": {
       "extensions": [
@@ -17,8 +17,8 @@
       ],
       "settings": {
         "workbench.colorCustomizations": {
-          "activityBar.background": "#006644",
-          "activityBar.foreground": "#000"
+          "activityBar.background": "#1c0041",
+          "activityBar.foreground": "#FFF"
         }
       }
     }

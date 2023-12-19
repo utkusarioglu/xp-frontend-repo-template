@@ -4,19 +4,11 @@
   "pipeline": {
     "build": {
       "dependsOn": ["^build"],
-      "outputs": [".next/**", "!.next/cache/**"],
+      "outputs": [],
       "dotEnv": ["apps/web/.env.local"]
     },
     "web#build": {
-      "env": [
-        "NODE_ENV",
-        "OTEL_TRACE_HOST",
-        "OTEL_TRACE_PORT",
-        "PROMETHEUS_PORT",
-        "HOSTNAME",
-        "ENABLE_INSTRUMENTATION",
-        "NEXT_RUNTIME"
-      ]
+      "env": ["NODE_ENV", "HOSTNAME", "ENABLE_TELEMETRY"]
     },
     "lint": {},
     "dev": {

@@ -1,6 +1,6 @@
 version: "3.9"
 services:
-  nextjs-grpc-frontend:
+  xp-frontend-repo-template:
     environment:
       GH_TOKEN: ${GH_TOKEN}
     volumes:
@@ -24,12 +24,12 @@ services:
 
 volumes:
   vscode-extensions:
-    name: nextjs-grpc-frontend-vscode-extensions
+    name: xp-frontend-repo-template-vscode-extensions
   vscode-extensions-insiders:
-    name: nextjs-grpc-frontend-vscode-extensions-insiders
+    name: xp-frontend-repo-template-vscode-extensions-insiders
   ccache:
-    name: nextjs-grpc-frontend-ccache
+    name: xp-frontend-repo-template-ccache
   gradle:
-    name: nextjs-grpc-frontend-gradle
+    name: xp-frontend-repo-template-gradle
   android:
-    name: nextjs-grpc-frontend-android
+    name: xp-frontend-repo-template-android

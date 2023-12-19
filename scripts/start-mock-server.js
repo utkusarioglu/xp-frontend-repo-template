@@ -5,7 +5,7 @@ const fs = require("node:fs");
 const queryString = require("node:querystring");
 
 const CERT_PATH =
-  "/utkusarioglu-com/projects/nextjs-grpc/frontend/.certs.local/mock-server";
+  "/utkusarioglu-com/templates/xp-frontend-repo-template/.certs.local/mock-server";
 
 const PORT = 443;
 

@@ -1,21 +1,18 @@
 version: "3.9"
 
 services:
-  nextjs-grpc-frontend:
+  xp-frontend-repo-template:
     image: utkusarioglu/react-native-android-devcontainer:1.0.18
     environment:
-      PROJECT_ROOT_ABSPATH: /utkusarioglu-com/projects/nextjs-grpc
+      PROJECT_ROOT_ABSPATH: /utkusarioglu-com/templates/xp-frontend-repo-template
       ANDROID_TARGET_DEVICE: 192.168.1.151:58526
-    extra_hosts:
-      android-host: host-gateway
-      ms.ms: host-gateway
+    # extra_hosts:
+    #   android-host: host-gateway
+    #   ms.ms: host-gateway
     ports:
       # - 3000:3000
       - 443:443
     volumes:
       - type: bind
         source: ..
-        target: /utkusarioglu-com/projects/nextjs-grpc/frontend
-      - type: bind
-        source: ../../proto
-        target: /utkusarioglu-com/projects/nextjs-grpc/proto
+        target: /utkusarioglu-com/templates/xp-frontend-repo-template

@@ -1,4 +1,10 @@
 {
+  "name": "xp-frontend-repo-template.templates.utkusarioglu.com",
+  "packageManager": "yarn@4.0.2",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev",
@@ -8,15 +14,8 @@
     "clean": "rm -rf node_modules **/**/node_modules apps/android/android/app/build apps/web/.next"
   },
   "devDependencies": {
-    "eslint": "^7.32.0",
-    "eslint-config-custom": "*",
-    "prettier": "^2.5.1",
-    "turbo": "^1.9.3"
-  },
-  "name": "frontend.nextjs-grpc.utkusarioglu.com",
-  "packageManager": "yarn@3.5.1",
-  "workspaces": [
-    "apps/*",
-    "packages/*"
-  ]
+    "eslint": "^8.56.0",
+    "prettier": "^3.1.1",
+    "turbo": "^1.11.2"
+  }
 }
